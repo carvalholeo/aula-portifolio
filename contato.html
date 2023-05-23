@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <style>
+    input.generos-livros:checked {
+      background-color: red;
+      color: red;
+      width: 3rem;
+      height: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <form method="GET" action="/index.html">
+    <label for="meu-nome">Nome:</label>
+    <input type="text" name="meu-nome" id="meu-nome" required oninvalid="this.setCustomValidity('mONA, VOCÊ É MALUCA?')"><br /><br />
+
+    <label>
+      Data de Nascimento:
+      <input type="date" name="data-nascimento" value="2020-12-31" readonly >
+    </label><br /><br />
+
+    <label for="meu-email">E-mail:</label>
+    <input type="email" name="meu-email" id="meu-email" readonly value="josivaldo@gmail.com"><br /><br />
+
+    <label>
+      <input class="generos-livros" type="checkbox" name="genero" value="ficcao">
+      Ficção
+    </label><br />
+    <label>
+      <input class="generos-livros"  type="checkbox" name="genero" value="religioso">
+      Religioso
+    </label><br />
+    <label>
+      <input class="generos-livros" type="checkbox" name="genero" value="tecnico">
+      Técnico
+    </label><br /><br />
+
+
+    Aceita receber SPAM?<br />
+    <label>
+      <input class="generos-livros" type="radio" name="spam" value="sim">
+      Sim
+    </label><br />
+    <label>
+      <input class="generos-livros" type="radio" name="spam" value="nao">
+      Não
+    </label><br />
+    <label>
+      <input class="generos-livros" type="radio" name="spam" value="talvez">
+      Talvez
+    </label><br /><br />
+
+    <label for="meu-estado">Estado: </label>
+    <select name="estado" id="meu-estado">
+      <option disabled selected>Selecione</option>
+      <optgroup label="Região Centro-Oeste">
+        <option value="DF">Distrito Federal</option>
+        <option value="GO">Goiás</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+      </optgroup>
+      <optgroup label="Região Nordeste">
+        <option value="AL">Alagoas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="MA">Maranhão</option>
+        <option value="PB">Paraíba</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="SE">Sergipe</option>
+      </optgroup>
+      <optgroup label="Região Norte">
+        <option value="AC">Acre</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="PA">Pará</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="TO">Tocantins</option>
+      </optgroup>
+      <optgroup label="Região Sudeste">
+        <option value="ES">Espírito Santo</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+      </optgroup>
+      <optgroup label="Região Sul">
+        <option value="PR">Paraná</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="SC">Santa Catarina</option>
+      </optgroup>
+    </select>
+
+    <input type="color" name="" id="">
+    <label for="escondido">Campo oculto</label>
+    <input type="hidden" name="escondido" value="valor-show-de-bola" id="escondido">
+
+    <input type="month" name="" id="">
+    <input type="tel" pattern="[0-9]{2} [0-9]{4}-[0-9]{4}" name="telefone">
+    <input type="number" name="" id="" step="10" min="5" max="300">
+    <input type="password" name="" id="">
+    <input type="range" name="" id="" min="30" max="500" value="100">
+    <input type="search" name="" id="">
+    <input type="url" name="" id="">
+    <br /><br />
+
+    <!-- <input type="reset" value="APAGAR TUDO">
+    <input type="button" value="Oi">
+    <input type="submit" value="Enviar"> -->
+
+    <button type="reset">APAGAR TUDO</button>
+    <button type="submit">Enviar</button>
+    <button>Olá mundo</button>
+
+  </form>
+</body>
+
+</html>

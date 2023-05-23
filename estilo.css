@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+article section#profissional.secao,
+header, main, footer {
+  background-color: #222;
+}
+
+html {
+  font-size: 48px;
+}
+
+h1 {
+  width: 10rem;
+}
+
+header > a {
+  color: #ddd
+}
+
+header > a:link, header > a:visited {
+  text-decoration: none;
+  color: #ddd;
+}
+
+header:hover .navegacao {
+  display: block;
+}
+
+header > a:active {
+  font-size: 3rem;
+}
+
+.navegacao {
+  display: none;
+}
+
+.navegacao li:first-child a {
+  color: yellow;
+}
+
+.navegacao li:last-child a {
+  color: green;
+}
+
+.navegacao li a:hover {
+  color: red;
+}
+
+*:lang(en) {
+  color: yellow;
+  text-align: end;
+}
+
+
+header {
+  font-size: 2rem;
+  /* position: sticky;
+  top: 0; */
+  display: block;
+  width: 100%;
+  /* height: calc(1rem * 6);
+  padding-bottom: 0.3rem; */
+}
+
+header a {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+header nav a {
+  font-size: 0.5rem;
+}
+
+section.secao {
+  background-color: cadetblue;
+}
+
+main {
+  /* margin-top: calc(1rem * 6 + 0.3rem); */
+}
+
+article section {
+  font-size: 40px;
+  color: white;
+  background-color: blueviolet;
+}
+
+.secao-principal > .artigo-secundario {
+  font-size: 24px;
+  background-color: white;
+}
+
+main + footer {
+  color: red;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: dotted underline black 10px;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 10px solid green;
+}
+
+*::selection {
+  background-color: yellow;
+}
+
+p::first-line {
+  color: red;
+}
+
+p::first-letter {
+  font-size: 3rem;
+  color: blue;
+}
+
+p::before {
+  content: 'Antes do parágrafo';
+  color: green;
+}
+
+p::after {
+  content: 'Depois do parágrafo';
+  color: green;
+}
+
+ul .lista.exclusiva {
+  list-style: disc;
+  list-style-type: circle;
+  list-style-position: outside;
+}
